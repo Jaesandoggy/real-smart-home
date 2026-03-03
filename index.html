@@ -20,7 +20,7 @@
         <li><a href="#about">เกี่ยวกับเรา</a></li>
         <li><a href="catalog.html">สินค้าเด่น</a></li>
         <li><a href="#strengths">จุดเด่น</a></li>
-        <li><a href="#services">บริการ</a></li>
+        <li><a href="#portfolio">ผลงานของเรา</a></li>
         <li><a href="quotation.html">ประเมินราคา</a></li>
       </ul>
 
@@ -194,14 +194,69 @@
   </section>
 
   <!-- ✅ คุณมีเมนู #services แต่ยังไม่มี section นี้: ทำ placeholder กันคลิกลิงก์แล้วงง -->
-  <section class="target" id="services">
+  <section class="portfolio" id="portfolio">
     <div class="container">
-      <h2 class="section-title">บริการของเรา <span>(Services)</span></h2>
-      <p style="color: var(--text-secondary); max-width: 800px; margin: 0 auto;">
-        (กำลังจัดทำรายละเอียดบริการ) — ไฟอัจฉริยะ, ควบคุมแอร์, กล้องวงจรปิด, ประตู/รั้ว, เซ็นเซอร์, Automation & Scene
+      <h2 class="section-title">ผลงานติดตั้งของเรา <span>(Portfolio)</span></h2>
+      <p style="text-align: center; margin-bottom: 40px; color: var(--text-secondary); max-width: 700px; margin-left: auto; margin-right: auto;">
+        ภาพผลงานการออกแบบและติดตั้งระบบ Smart Home จากสถานที่จริง เราใส่ใจทุกรายละเอียดตั้งแต่การเดินสายไฟ เซ็ตอัประบบ จนถึงการสอนใช้งาน
       </p>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item" onclick="openLightbox('https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=800')">
+          <img src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=800" alt="ติดตั้งสวิตช์ไฟ">
+          <div class="portfolio-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+
+        <div class="portfolio-item" onclick="openLightbox('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800')">
+          <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800" alt="ติดตั้งระบบกล้อง">
+          <div class="portfolio-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+
+        <div class="portfolio-item" onclick="openLightbox('https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800')">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800" alt="เซ็ตอัป Gateway">
+          <div class="portfolio-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+
+        <div class="portfolio-item" onclick="openLightbox('https://images.unsplash.com/photo-1520699049698-acd2fce18736?q=80&w=800')">
+          <img src="https://images.unsplash.com/photo-1520699049698-acd2fce18736?q=80&w=800" alt="ติดตั้ง Digital Door Lock">
+          <div class="portfolio-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" onclick="openLightbox('https://images.unsplash.com/photo-1558021211-6d1403321394?q=80&w=800')">
+          <img src="https://images.unsplash.com/photo-1558021211-6d1403321394?q=80&w=800" alt="เดินสายไฟระบบ">
+          <div class="portfolio-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+
+        <div class="portfolio-item" onclick="openLightbox('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800')">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800" alt="ส่งมอบงานลูกค้า">
+          <div class="portfolio-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://line.me/ti/p/@realsmarthome" class="btn btn-outline" style="padding: 10px 30px;">
+          <i class="fa-brands fa-line" style="margin-right: 5px;"></i> ดูผลงานอัปเดตล่าสุดที่ LINE
+        </a>
+      </div>
     </div>
   </section>
+
+  <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox(event)">
+    <span class="lightbox-close" onclick="closeLightboxBtn()">&times;</span>
+    <img src="" alt="ภาพขยาย" id="lightboxImg">
+  </div>
 
   <section class="target">
     <div class="container">
@@ -359,6 +414,7 @@
 
 </body>
 </html>
+
 
 
 
